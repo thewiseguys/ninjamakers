@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja Makers</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./public/css/index.css">
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+
+	<style type="text/css">
+		@font-face {
+		  font-family: horobi;
+		  src: url(./public/fonts/horobi.ttf);
+		}
+	</style>
+</head>
+<body style="background: #101021">
+<!-- NavBar -->
+
+	<!-- Mobile View -->
+	  <div id="mySidenav" class="sidenav mobNav" style="background:#101021">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	    <a href="#">Introduction</a>
+	    <a href="#">Registration</a>
+	  </div>
+	 	<table class="mobNavCover">
+	 		<tr>
+	 			<td style="width: 30%">
+	 				<span class="navHamburger" onclick="openNav()">&#9776; </span>
+	 			</td>
+	 			<td style="width: 70%;text-align: right;padding-right: 10px">
+	 				<img src="./public/img/logo.jpg" style="width: 125px">
+	 			</td>
+	 		</tr>
+	 	</table>
+	    
+
+
+<section id="navDeskWrapper">
+
+	<nav style="background:#101021;padding: 0px 50px;" class="uk-navbar-container" uk-navbar>
+
+	    <div class="uk-navbar-left">
+
+	        <ul class="uk-navbar-nav">
+	            <li class="uk-active">
+	            	<img style="width:110px" src="./public/img/logo.jpg">
+	            </li>
+	        </ul>
+	    </div>
+
+	    <div class="uk-navbar-right">
+
+	        <ul class="uk-navbar-nav">
+	                <li class="navLinks"><a href="#">Courses</a></li>
+	                <li class="navLinks"><a href="#">About Us</a></li>
+	                <li class="navLinks"><a href="#">Contact Us</a></li>
+	                <li class="navLinks"><a href="#">
+	                		<button class="uk-button uk-button-default">Book a Demo Class</button>
+	                	</a></li>
+	        </ul>
+	    </div>
+	</nav>
+
+
+
+</section>
+
+<!-- Home Banner -->
+<section id="homeBanSec">
+	<div uk-grid>
+	    <div class="uk-width-3-5@m">
+	        <img src="./public/img/home1.png">
+	    </div>
+	    <div class="uk-width-1-3@m" style="text-align: center;">
+	    	<p id="homeBannerHead">The fastest way to learn a language !</p>
+	    	<br>
+	    	<p id="homeBannerText">The key? A natural approach to learning real-life language. <br>Jump in and give it a go!</p>
+	    	<br>
+	    	<button class="uk-button uk-button-default" id="getStartedButton">Get Started</button>
+	    </div>
+	</div>
+</section>
+
+<!-- Who are we -->
+<section id="wawSec">
+	<div id="weHead" >Who are we?</div>
+	<div uk-grid>
+	    <div class="uk-width-2-5@m weTextWrap">
+	    	<p class="weText">
+	    		Ninja Makers help people acheive their maximum potential. 
+			</p>
+			<p class="weText">With Ninjamakers speak the language like you’ve always wanted to. Ninjamakers not only helps you to be fluent in English but in the overall personality development of each individual wherein they can fight their utmost fears of speaking in English or presenting themselves in front of others. 
+			</p>
+			<p class="weText">With online live classes and thorough speaking practice our expert and friendly trainers transform you into a fluent English Speaker. 
+			</p>
+	    </div>
+	    	    <div class="uk-width-3-5@m">
+	        <img src="./public/img/we.png">
+	    </div>
+	</div>
+</section>
+
+<!-- Ninja Makers is for EveryOne -->
+<section style="background: #fff3f0">
+		<div class="everyoneWrapper">
+			<span id="everyoneHead" >NinjaMakers is for Everyone</span><br>
+			<span id="everyoneHeadText">We have custom-made plans for every phase of your career and personal goals.</span>
+		</div>
+
+		<div class="uk-child-width-1-3@m allWrapper" uk-grid>
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-8.png"
+					     data-srcset="./public/img/home-8.png" 
+					      uk-img>
+					    <span>ProfesSionals<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-9.png"
+					     data-srcset="./public/img/home-9.png" 
+					      uk-img>
+					    <span>Companies<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-10.png"
+					     data-srcset="./public/img/home-10.png" 
+					      uk-img>
+					    <span>Kids<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-11.png"
+					     data-srcset="./public/img/home-11.png" 
+					      uk-img>
+					    <span>College Students<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-12.png"
+					     data-srcset="./public/img/home-12.png" 
+					      uk-img>
+					    <span>Self Employed<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		    <div>
+		        <div class="uk-card uk-card-default allCardWrapper">
+		            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light allCard"
+					     data-src="./public/img/home-13.png"
+					     data-srcset="./public/img/home-13.png" 
+					      uk-img>
+					    <span>Homemakers<hr></span>
+					</div>
+		        </div>
+		    </div>
+
+		</div>
+</section>
+
+<!-- Expert Online Classes -->
+<section style="background: #101021">
+	<div uk-grid class="expertWrapper">
+	    <div class="uk-width-3-5@m bestWrapper">
+	    	<p class="bestHead">
+	    		Expert Led Online Classes
+			</p>
+			<p class="bestText">
+				Handpicked via NinjaMakers’s Industry Leading 5-Step Teacher Selection Process.
+			</p>
+			<p class="bestText">
+				NinjaMakers’s follows a rigorous 5-Step Selection Process for confirming teacher candidates so you are taught by the Top 0.01% of Spoken Eglish Experts.
+			</p>
+	    </div>
+	    	    <div class="uk-width-2-5@m">
+	        <img src="./public/img/best.png">
+	    </div>
+	</div>
+
+	<div uk-grid style="padding: 40px;background:#fff3f0;text-align: center;">
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_01.svg" > <br> 
+	        <span>One-hour sessions by experts</span>
+	    </div>
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_02.svg" > <br> 
+	        <span>A safe and fun environment</span>
+	    </div>
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_03.svg" > <br> 
+	        <span>Personalised attention</span>
+	    </div>
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_04.svg" > <br> 
+	        <span>Trained facilitators from top institutes</span>
+	    </div>
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_05.svg" > <br> 
+	        <span>More cost-effective than tuitions</span>
+	    </div>
+	    <div class="uk-width-1-6@m bestSvg">
+	    	<img src="./public/img/Online_Classes_06.svg" > <br> 
+	        <span>Multi-cultural experience</span>
+	    </div>
+	</div>
+</section>
+
+
+<!-- Courses -->
+<!-- <section>
+	<div class="uk-position-relative uk-visible-toggle uk-light uk-container" tabindex="-1" uk-slider>
+	    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
+	        <li>
+	            <div class="uk-card uk-card-default">
+		            <div class="uk-card-media-top">
+		                <img src="https://i.ibb.co/QDTt3Gk/complete-course.jpg" alt="">
+		            </div>
+		            <div class="uk-card-body" style="padding: 15px 20px;">
+		                <h3 class="uk-card-title" style="font-size: 20px">Complete Foundation Video Course</h3>
+		                <p><span>Rs.2999</span> <span>Rs.11,000</span> <span>73% off</span>
+		                	<hr>
+		                	<button class="uk-button uk-button-primary" style="background: red">Default</button>
+		                </p>
+		            </div>
+		        </div>
+	        </li>
+	    </ul>
+
+	    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+	    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+	</div>
+</section> -->
+
+
+<!-- Riviews -->
+
+<section class="riviewsSecWrap">
+	<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match riviewsDiv" uk-grid>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body riviewsCard1">
+	            <img src="https://thefluentlife.com/public/static/website/fluent_website/img/images/neeraja.png">
+	            <p>
+	            	<br>
+	            	Speaking english is no longer difficult with the help of ninja makers. Getting corrections for your mistakes helps you continue to improve.<br>
+	            	<b>- Jyoti </b>
+	            </p>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body riviewsCard2">
+	            <img src="https://thefluentlife.com/public/static/website/fluent_website/img/images/pannagashree.png">
+	            <p>
+	            	From the first day I of class with Ninja makers, I became more fluent in English and enjoyed meeting new people and cultures. I've improved my language skills, especially speaking, without travelling abroad. Thanks Ninja makers!<br>
+	            	<b>- Amber </b>
+	            </p>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body riviewsCard1">
+	            <img src="https://thefluentlife.com/public/static/website/fluent_website/img/images/khushboo.png">
+	            <p>
+	            	I really like Ninja makers because it covers the speaking, listening and writing in the best way possible. It is really good to learn through the explanations that are always placed after something important.<br>
+	            	<b>- Divya </b>
+	            </p>
+	        </div>
+	    </div>
+	</div>
+</section>
+
+<!-- Footer -->
+<section class="footerWrap">
+	<div uk-grid>
+	    <div class="uk-width-1-4@m logoFooterWrap">
+	    	<img src="./public/img/logo.jpg">
+	    	<br>
+	    	<span class="uk-margin-small-right iconCover" uk-icon="icon: facebook; ratio: 1.2"></span>
+	    	<span class="uk-margin-small-right iconCover" uk-icon="icon: instagram; ratio: 1.2"></span>
+	    	<span class="uk-margin-small-right iconCover" uk-icon="icon: whatsapp; ratio: 1.2"></span>
+	    	<span class="uk-margin-small-right iconCover" uk-icon="icon: linkedin; ratio: 1.2"></span>
+	    </div>
+	    <div class="uk-width-1-4@m">
+	    </div>
+	    <div class="uk-width-1-4@m">
+	    </div>
+	    <div class="uk-width-1-4@m contactFooterWrap">
+	    	<span style=";font-family: Nunito;font-size: 30px">Get in Touch:</span>
+	    	<br><br>
+	    	<span class="uk-margin-small-right" uk-icon="icon: phone; ratio: 1.2"></span> 
+	    	<span style="">+91 9600255848</span>
+	    	<br><br>
+	    	<span class="uk-margin-small-right iconCover" uk-icon="icon: mail; ratio: 1.2"></span> 
+	    	<span style=""> contact@ninjamakers.com</span>
+	    </div>
+	</div>
+</section>
+<script type="text/javascript">
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+
+</body>
+</html>

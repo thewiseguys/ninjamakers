@@ -1,0 +1,401 @@
+
+.mobNavCover{
+    width: 100%;   
+    display: none;
+}
+
+.mobNavCover tr{
+    width: 100%;   
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background:#f7954b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #101021;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navHamburger{
+  font-size:40px;
+  cursor:pointer;
+  display: none;
+  color:#f7954b;
+  padding: 15px 20px 20px 20px;
+}
+
+.navtext a{
+  font-family: Raleway;
+  color: rgb(155,198,88);
+  text-decoration: none;
+} 
+
+.mobNav{
+   background: #f7954b !important;
+   font-family: Raleway;
+   color: rgb(155,198,88);
+}
+
+.mobNav a{
+   font-family: Raleway;
+   color: #101021;
+}
+
+
+
+
+
+
+
+#navDeskWrapper{
+        display: block;
+    }
+
+.navLinks a{
+	font-family: Raleway !important;
+	color: #f7954b !important;
+	font-size: 18px !important;
+}
+
+.navLinks a:hover{
+	font-family: Raleway !important;
+	color: #f7954b !important;
+	font-size: 20px !important;
+}
+
+.navLinks a button{
+    border: 1px solid #f7954b;
+    border-radius: 10px;
+    font-family: Raleway;
+    color: #101023;
+    background: #f7954b;
+}
+
+.navLinks a button:hover{
+    border: 2px solid #f7954b;
+    border-radius: 10px;
+    font-family: Raleway;
+    color: #f7954b;
+    background: #101021;
+}
+
+#homeBannerHead{
+	font-family: 'Nunito';
+	color:white;
+	font-size: 40px;
+	/*transform: rotate(-2deg);*/
+}
+
+#homeBanSec{
+    padding:50px 50px;
+    background: #101021;
+}
+
+#homeBannerText{
+	font-family: Ubuntu;
+	color:white;
+	font-size: 20px;
+
+}
+
+#getStartedButton{
+    border: 1px solid #f7954b;
+    border-radius: 10px;
+    font-family: Raleway;
+    color: #101023;
+    background: #f7954b;
+}
+
+#getStartedButton:hover{
+    border: 2px solid #f7954b;
+    border-radius: 10px;
+    font-family: Raleway;
+    color: #f7954b;
+    background: #101023;
+}
+
+#wawSec{
+    padding:50px;
+    background:#fff3f0;
+}
+
+
+#weHead{
+        font-family: 'Nunito';
+        font-size: 50px;
+        text-align: center;
+        padding: 10px 0px 45px 0px;
+
+}
+
+.weTextWrap{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.weText{
+    font-family: Ubuntu;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.everyoneWrapper{
+    background:#101021;
+    padding: 50px 30px;
+}
+
+#everyoneHead{
+        font-family: 'Nunito';
+        font-size: 50px;
+        padding: 10px 0px 20px 0px;
+        color: white;
+}
+
+#everyoneHeadText{
+    font-family: Ubuntu;
+    font-size: 18px;
+    padding-top: 0px;
+    color: white;
+}
+
+.allWrapper{
+    padding : 60px;
+}
+
+.allCardWrapper{
+    background:#fff3f0;
+    padding:0px;
+}
+
+.allCard{
+    border: 0px solid red;
+    border-radius: 15px;
+    height: 250px !important;
+}
+
+.allCard span{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    margin-top: 203px;
+}
+
+.expertWrapper{
+    padding: 50px
+}
+
+.bestWrapper{
+    margin-top: 25px;padding: 10px 100px 10px 40px;
+}
+
+
+.bestHead{
+    color: white;
+    font-family: 'Nunito';
+    font-size: 45px;
+}
+
+.bestText{
+    font-family: Ubuntu;
+    color: white;
+    font-size: 18px;
+}
+.bestSvg img{
+    width: 70px;
+}
+.bestSvg span{
+    font-family: Nunito;
+    color: #101021;
+}
+
+.riviewsSecWrap{
+    background: white;
+    padding: 120px 30px 80px 30px;
+}
+
+.riviewsDiv{
+    padding:50px;
+    text-align: center;
+}
+
+.riviewsCard1{
+    background: #9669ad;
+    border: 4px solid #a28dd0;
+    border-radius: 10px;
+    padding: 20px 30px 25px 30px;
+    color: white;
+}
+
+.riviewsCard1 img{
+    width: 125px;
+    margin-top: -90px;
+}
+
+.riviewsCard2{
+    background: #f7954b;
+    border: 6px solid #ff9e0c;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: white;
+}
+
+.riviewsCard2 img{
+    width: 125px;
+    margin-top: -90px;
+}
+
+.footerWrap{
+    padding: 30px 50px;
+    background: #101021;
+}
+
+.logoFooterWrap{
+    text-align: center;
+}
+
+.logoFooterWrap img{
+    width: 200px;
+}
+
+.logoFooterWrap span{
+   color: #bdbdbd; 
+}
+
+.logoFooterWrap span:hover{
+   color: #f7954b;
+    cursor: pointer; 
+}
+
+.contactFooterWrap{
+    padding-top: 40px;
+    color:white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mobNavCover{
+        display: block;
+    }
+    .navHamburger{
+        display: block;
+    }
+    #navDeskWrapper{
+        display: none;
+    }
+    #homeBanSec{
+        padding:30px 20px;
+    }
+    #wawSec{
+        padding:30px 20px;
+    }
+    .weTextWrap{
+        margin-top: 0px;
+    }
+    #weHead{
+        padding: 10px 0px 15px 0px;
+    }
+
+    .allWrapper{
+        padding : 30px 15px;
+    }
+    .expertWrapper{
+        padding: 20px
+    }
+
+    .bestWrapper{
+        margin-top: 25px;padding: 0px 10px 10px 40px;
+    }
+    .bestSvg img{
+        width: 85px;
+    }
+    .bestSvg span{
+        font-family: Nunito;
+        color: #101021;
+        font-size: 20px;
+    }
+
+
+
+    .riviewsSecWrap{
+        background: white;
+        padding: 35px 30px 80px 30px;
+    }
+
+    .riviewsDiv{
+        padding:5px;
+        text-align: center;
+    }
+
+    .riviewsCard1{
+        background: #9669ad;
+        border: 4px solid #a28dd0;
+        border-radius: 10px;
+        padding: 0px 30px 25px 30px;
+        color: white;
+        margin-top: 90px;
+    }
+
+    .riviewsCard1 img{
+        width: 125px;
+        margin-top: -80px;
+    }
+
+    .riviewsCard2{
+        background: #f7954b;
+        border: 6px solid #ff9e0c;
+        border-radius: 10px;
+        padding: 0px 30px;
+        color: white;
+        margin-top: 90px;
+    }
+
+    .riviewsCard2 img{
+        width: 125px;
+        margin-top: -80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
