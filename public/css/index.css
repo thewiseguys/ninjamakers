@@ -381,8 +381,12 @@
         margin-top: -80px;
     }
 
-
-
+    .contactFooterWrap{
+        padding-top: 0px;
+        color:white;
+        text-align: center;
+        margin-top: 0px !important;
+    }
 
 
 
