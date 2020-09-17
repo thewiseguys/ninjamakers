@@ -74,7 +74,7 @@ app.post('/demoForm', (req, res) => {
                         var mainOptions = {
                             from: 'iamanupamrana@gmail.com',
                             to: "anupam@thehocket.com",
-                            cc: "yashaswi@thehocket.com",
+                            cc: ["yashaswi@thehocket.com","anshuljat121@gmail.com"],
                             subject: email_subject,
                             html: data
                             };
