@@ -59,7 +59,7 @@ app.post('/demoForm', (req, res) => {
 			    secure: false, // true for 465, false for other ports
 			    auth: {
 			      user: "iamanupamrana@gmail.com", // generated ethereal user
-			      pass: "Password@123", // generated ethereal password
+			      pass: "zkeecjubmxgvccck", // generated ethereal password
 			    },
 			  });
 
