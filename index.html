@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ninja Makers</title>
+	<title>Ninja Makers - Online Spoken English Classes</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+
     <!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
 
@@ -26,6 +32,50 @@
 	</style>
 </head>
 <body style="background: #101021">
+
+
+<!-- Book a Demo -->
+<div id="demo-box" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h3 class="uk-modal-title">Book a demo Class:</h3>
+        <p>
+        	<form class="uk-form-stacked" id="demoFormWrap" enctype="multipart/form-data" action="/demoForm"  method="POST">
+
+			    <div class="uk-margin">
+			        <label class="uk-form-label" for="form-name">Name:</label>
+			        <div class="uk-form-controls">
+			            <input class="uk-input" id="form-name" required type="text" name="name" placeholder="What's your name?">
+			        </div>
+			    </div>
+
+			    <div class="uk-margin">
+			        <label class="uk-form-label" for="form-phone">Phone No.:</label>
+			        <div class="uk-form-controls">
+			            <input class="uk-input" id="form-phone" required type="number" name="phone" placeholder="What's your phone number?">
+			        </div>
+			    </div>
+
+			    <div class="uk-margin">
+			        <label class="uk-form-label" for="form-iam">I am a:</label>
+			        <div class="uk-iam">
+			            <select class="uk-select" required id="form-stacked-select" name="iam">
+			                <option>School Student</option>
+			                <option>College Student</option>
+			                <option>Professional</option>
+			                <option>Bussinesman</option>
+			                <option>Homemaker</option>
+			                <option>Others</option>
+			            </select>
+			        </div>
+			    </div>
+			    <button class="uk-button uk-button-primary uk-modal-close" id="demoSubmit" type="submit">Submit</button>
+			</form>
+        </p>
+
+    </div>
+</div>
+
+
 <!-- NavBar -->
 
 	<!-- Mobile View -->
@@ -33,9 +83,9 @@
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 	    <a href="#">Book Demo</a>
-	    <a href="#">Courses</a>
-	    <a href="#">About Us</a>
-	    <a href="#">Contact Us</a>
+	    <a href="#" class="coursesNabBtn">Courses</a>
+	    <a href="#" class="aboutUsNabBtn">About Us</a>
+	    <a href="#" class="contactUsNabBtn">Contact Us</a>
 	  </div>
 	 	<table class="mobNavCover">
 	 		<tr>
@@ -66,12 +116,14 @@
 	    <div class="uk-navbar-right">
 
 	        <ul class="uk-navbar-nav">
-	                <li class="navLinks"><a href="#">Courses</a></li>
-	                <li class="navLinks"><a href="#">About Us</a></li>
-	                <li class="navLinks"><a href="#">Contact Us</a></li>
-	                <li class="navLinks"><a href="#">
-	                		<button class="uk-button uk-button-default">Book a Demo Class</button>
-	                	</a></li>
+	                <li class="navLinks coursesNabBtn"><a href="#">Courses</a></li>
+	                <li class="navLinks aboutUsNabBtn"><a href="#">About Us</a></li>
+	                <li class="navLinks contactUsNabBtn"><a href="#">Contact Us</a></li>
+	                <li class="navLinks">
+		                <a href="#">
+		                	<button class="uk-button uk-button-default" uk-toggle="target: #demo-box">Book a Demo Class</button>
+		                </a>
+	            	</li>
 	        </ul>
 	    </div>
 	</nav>
@@ -91,7 +143,7 @@
 	    	<br>
 	    	<p id="homeBannerText">The key? A natural approach to learning real-life language. <br>Jump in and give it a go!</p>
 	    	<br>
-	    	<button class="uk-button uk-button-default" id="getStartedButton">Get Started</button>
+	    	<button class="uk-button uk-button-default getStartedButton coursesNabBtn">Get Started</button>
 	    </div>
 	</div>
 </section>
@@ -192,6 +244,233 @@
 		</div>
 </section>
 
+
+<!-- Courses -->
+<section class="courseSecWrap">
+	<div class="courseHead" >Courses</div>
+
+	<div style="text-align: center;padding: 15px 0px 50px 0px;">
+		<span class="courseMainSwitcher" id="BasicSwitch" style="color:white;background: #101021"> &nbsp Basic &nbsp</span><span class="courseMainSwitcher" id="AdvanceSwitch" style="color:#101021;background:white">Advance</span>
+	</div>
+<!-- Basic Courses Starts -->
+	<div id="basicCoursesWrapper">
+	    <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
+	        <div>
+	            <div class="uk-card uk-card-default">
+	            	<div class="uk-card-badge uk-label bestVal">Best Value</div>
+		            <div class="uk-card-media-top">
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5e7e51cca52da4ab4bd958e6?h=d41d8cd98f00b204e9800998ecf8427e" alt="">
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Basic: 1 on 1 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		 Introduction to the basics of Spoken English through a personal tutor.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.11,499</span> 
+		                				<span style="text-decoration: line-through;">Rs15,000</span><br>
+		                				<span style="" class="coursesSave">Save 24%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                	<a href="https://rzp.io/l/8UKDulu">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                	</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+
+	        <div>
+	            <div class="uk-card uk-card-default">
+		            <div class="uk-card-media-top">
+		            	<div class="uk-card-badge uk-label bestVal">Most Popular</div>
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5f36c3230f7951036bbc1c73?h=d41d8cd98f00b204e9800998ecf8427e" alt=""> 
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Basic: 1 on 2 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		Introduction to the basics of Spoken English through a personal tutor.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.7999</span> 
+		                				<span style="text-decoration: line-through;">Rs.12,000</span><br>
+		                				<span style="" class="coursesSave">Save 33%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                		<a href="https://rzp.io/l/yfHyIzG">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                		</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+
+	        <div>
+	            <div class="uk-card uk-card-default">
+		            <div class="uk-card-media-top">
+		            	<div class="uk-card-badge uk-label bestVal">Most Sold</div>
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5e2b9aa00b0a5a7e50456a53?h=d41d8cd98f00b204e9800998ecf8427e" alt="">
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Basic: 1 on 3 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		Introduction to the basics of Spoken English through a personal tutor.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.5999</span> 
+		                				<span style="text-decoration: line-through;">Rs.9,000</span><br>
+		                				<span style="" class="coursesSave">Save 33%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                		<a href="https://rzp.io/l/yfHyIzG">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                		</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+<!-- Basic Courses Ends -->
+<!-- Advance Courses Starts -->
+	<div id="advanceCoursesWrapper" style="display: none">
+	    
+	    <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match" uk-grid>
+	        <div>
+	            <div class="uk-card uk-card-default">
+	            	<div class="uk-card-badge uk-label bestVal">Best Value</div>
+		            <div class="uk-card-media-top">
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5e2b9a5feb6295be78ddf8c3?h=d41d8cd98f00b204e9800998ecf8427e" alt="">
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Advace: 1 on 1 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		 In depth exposure to build fluency in Spoken English.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.11,499</span> 
+		                				<span style="text-decoration: line-through;">Rs15,000</span><br>
+		                				<span style="" class="coursesSave">Save 24%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                		<a href="https://rzp.io/l/tmQ3r8P">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                		</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+
+	        <div>
+	            <div class="uk-card uk-card-default">
+		            <div class="uk-card-media-top">
+		            	<div class="uk-card-badge uk-label bestVal">Most Popular</div>
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5f36c3230f7951036bbc1c73?h=d41d8cd98f00b204e9800998ecf8427e" alt=""> 
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Advance: 1 on 2 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		In depth exposure to build fluency in Spoken English.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.7999</span> 
+		                				<span style="text-decoration: line-through;">Rs.12,000</span><br>
+		                				<span style="" class="coursesSave">Save 33%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                		<a href="https://rzp.io/l/kqMxbQP">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                		</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+
+	        <div>
+	            <div class="uk-card uk-card-default">
+		            <div class="uk-card-media-top">
+		            	<div class="uk-card-badge uk-label bestVal">Most Sold</div>
+		                <img src="https://camblycurriculumicons.s3.amazonaws.com/5e2b9a93c6c4fea72f30b51f?h=d41d8cd98f00b204e9800998ecf8427e" alt="">
+		            </div>
+		            <div class="uk-card-body courseCardWrap">
+		                <h3>Advance: 1 on 3 Personal Training</h3>
+		                <p>
+		                	<span>
+		                		In depth exposure to build fluency in Spoken English.
+		                	</span>
+		                	<table style="width: 100%;font-family: Montserrat;">
+		                		<tr style="width: 100%">
+		                			<td style="width: 35%; font-size: 15px;vertical-align: top;">
+		                				36 Sessions
+		                			</td>
+		                			<td style="text-align: right;font-size: 15px">
+		                				<span style="font-weight: bold;">Rs.5999</span> 
+		                				<span style="text-decoration: line-through;">Rs.9,000</span><br>
+		                				<span style="" class="coursesSave">Save 33%</span>
+		                			</td>
+		                		</tr>
+		                	</table>		                	
+		                	<div class="courseBuyBtnCover">
+		                		<a href="https://rzp.io/l/66w2cJV">	
+		                		<button class="uk-button uk-button-primary courseBuyBtn">Buy Now</button>
+		                		</a>
+		                	</div>
+		                </p>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+
+<!-- Advance Courses Ends -->
+
+</section>
+
 <!-- Expert Online Classes -->
 <section style="background: #101021">
 	<div uk-grid class="expertWrapper">
@@ -238,33 +517,6 @@
 	    </div>
 	</div>
 </section>
-
-
-<!-- Courses -->
-<!-- <section>
-	<div class="uk-position-relative uk-visible-toggle uk-light uk-container" tabindex="-1" uk-slider>
-	    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
-	        <li>
-	            <div class="uk-card uk-card-default">
-		            <div class="uk-card-media-top">
-		                <img src="https://i.ibb.co/QDTt3Gk/complete-course.jpg" alt="">
-		            </div>
-		            <div class="uk-card-body" style="padding: 15px 20px;">
-		                <h3 class="uk-card-title" style="font-size: 20px">Complete Foundation Video Course</h3>
-		                <p><span>Rs.2999</span> <span>Rs.11,000</span> <span>73% off</span>
-		                	<hr>
-		                	<button class="uk-button uk-button-primary" style="background: red">Default</button>
-		                </p>
-		            </div>
-		        </div>
-	        </li>
-	    </ul>
-
-	    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-	    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-	</div>
-</section> -->
 
 
 <!-- Riviews -->
@@ -328,16 +580,9 @@
 	    </div>
 	</div>
 </section>
-<script type="text/javascript">
-	function openNav() {
-	  document.getElementById("mySidenav").style.width = "250px";
-	}
 
-	function closeNav() {
-	  document.getElementById("mySidenav").style.width = "0";
-	}
-</script>
-
+<script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+<script src="./public/js/index.js"></script>
 
 </body>
 </html>

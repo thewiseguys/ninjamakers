@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html style="background: #fff3f0">
+<head>
+	<title>Ninja Makers - Welcome to the family</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+
+    <!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./public/css/index.css">
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+
+	<style type="text/css">
+		@font-face {
+		  font-family: horobi;
+		  src: url(./public/fonts/horobi.ttf);
+		}
+	</style>
+</head>
+<body >
+
+<!-- NavBar -->
+
+	<!-- Mobile View -->
+	  <div id="mySidenav" class="sidenav mobNav" style="background:#101021">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	    <a href="#">Book Demo</a>
+	    <a href="#" class="coursesNabBtn">Courses</a>
+	    <a href="#" class="aboutUsNabBtn">About Us</a>
+	    <a href="#" class="contactUsNabBtn">Contact Us</a>
+	  </div>
+	 	<table class="mobNavCover" style="background:#101021">
+	 		<tr>
+	 			<td style="width: 30%">
+	 				<span class="navHamburger" onclick="openNav()">&#9776; </span>
+	 			</td>
+	 			<td style="width: 70%;text-align: right;padding-right: 10px">
+	 				<img src="./public/img/logo.jpg" style="width: 125px">
+	 			</td>
+	 		</tr>
+	 	</table>
+	    
+
+
+<section id="navDeskWrapper">
+
+	<nav style="background:#101021;padding: 0px 50px;" class="uk-navbar-container" uk-navbar>
+
+	    <div class="uk-navbar-center">
+
+	        <ul class="uk-navbar-nav">
+	            <li class="uk-active">
+	            	<img style="width:110px" src="./public/img/logo.jpg">
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
+
+
+
+</section>
+
+<!-- Home Banner -->
+<section id="welcomeBanSec">
+	<div uk-grid>
+	    <div class="uk-width-2-5@m">
+	        <img src="./public/img/welcome.png">
+	    </div>
+	    <div class="uk-width-3-5@m" style="text-align: center;">
+	    	<p id="homeBannerHead" style="color:#101021;">Welcome to the Ninja Maker Family!</p>
+	    	<br>
+	    	<p id="homeBannerText" style="color: #101021">Our team will contact you within 48 hours to help you with your onboarding and slot allocation. :)</p>
+	    	<br>
+	    	<a href="/">
+	    	<button class="uk-button uk-button-default getStartedButton">Go back to Home Page</button>
+	    	</a>
+	    </div>
+	</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+<script src="./public/js/index.js"></script>
+
+</body>
+</html>
