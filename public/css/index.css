@@ -211,7 +211,7 @@
 
 .courseSecWrap{
     background: #fafafa;
-    padding: 30px 80px 100px 80px ;
+    padding: 30px 200px 100px 200px ;
 }
 
 .courseHead{
@@ -486,7 +486,13 @@ width: 300px;
     }
 
 
-
+    .courseMainSwitcher{
+    border: 2px solid #101021;
+    width: 300px;
+    padding: 7px 22px;
+    font-family: Nunito;
+    font-size: 20px;
+    }
 
 
 
